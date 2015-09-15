@@ -5,9 +5,6 @@ body:hover{
 	animation: super-rainbow 0.5s infinite linear;
 	cursor: pointer;
 }
-h1{
-	transform: scale(20);
-}
 p{
 	animation: roll 0.1s infinite;
 	transform: rotate(30deg);
@@ -30,7 +27,7 @@ input[type="radio"], input[type="checkbox"]{
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
 }
-
+/* keyframes */
 @keyframes shimmy {
   0% {
     transform: translate(0, 0);    
