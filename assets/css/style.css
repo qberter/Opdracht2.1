@@ -1,14 +1,73 @@
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
-
+body:hover{
+	animation: super-rainbow 0.5s infinite linear;
+	cursor: pointer;
+}
 h1{
-	
+	transform: scale(20);
+}
+p{
+	animation: roll 0.1s infinite;
+	transform: rotate(30deg);
 }
 label, input, textarea{
 	display: block;
+ 	animation: shimmy 0.1s infinite;
+ 	transform: skew(20deg);
+ 	animation-direction: alternate;
+}
+label:hover, input:hover, textarea:hover{
+	animation: translate 1s infinite;
 }
 
 input[type="radio"], input[type="checkbox"]{
 	display: inline-block;
+}
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20px, 50px);
+  }
+}
+@keyframes translate {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20000px, 50000px, 6000px;);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes super-rainbow {
+    0%   { background: red; } 
+    20%  { background: orange; }
+    40%  { background: yellow; }
+    60%  { background: green; }
+    80%  { background: blue; }
+    100% { background: violet; }
+}
+@-moz-keyframes super-rainbow {
+    0%   { background: red; } 
+    20%  { background: orange; }
+    40%  { background: yellow; }
+    60%  { background: green; }
+    80%  { background: blue; }
+    100% { background: violet; }
 }
