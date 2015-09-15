@@ -1,0 +1,109 @@
+<!--
+	Project: Frontend Development Opdracht 1.2
+	Name: Franck van Domburg
+	School: Hogeschool van Amsterdam
+	Class: V1 12
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Frontend Development Opdracht 1.2</title>
+		<!--CSS-->
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<!--Font-->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,400,600,400italic,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<nav></nav>
+		</header>
+		<main role="main">
+			<article>
+				<h1>Aanmelden</h1>
+				
+				<p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p> 
+
+				<p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p> 
+
+				<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons op.<p>
+				
+				<form>
+					<fieldset>
+						<legend>Contactgegevens:</legend>
+							<label>Naam<input type="text" required></label>
+							<label>Bedrijf<input type="text" required></label>
+							<label>Adres<input type="text"></label>
+							<label>Postcode<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"></label>
+							<label>Plaats<input type="text" required></label>
+							<label>Telefoon<input type="tel" required></label>
+							<label>Email<input type="email" required></label>
+							
+						<select>
+							<option value="project">Voor een project</option>
+							<option value="stage">Als stagebedrijf</option>
+						</select>
+					</fieldset>
+
+					<fieldset id="project">
+						<legend>Project</legend>
+							<label>Titel<input type="text" required></label>
+							<label>Opdrachtomschrijving<textarea rows="6"></textarea></label>
+							<label>Doelgroepomschrijving<textarea rows="6"></textarea></label>
+							<label>Doelstelling/intentie van het project<textarea rows="6"></textarea></label>
+							<label>looptijd in weken<input type="number" min="1" max="50" step="1" value="10"></label>
+							<label>deadline<input type="date" required></label>
+							
+
+							<label>Geschikt voor</label>
+							<label><input type="checkbox" name="eerste"> eerstejaars studenten</label>
+							<label><input type="checkbox" name="tweede"> tweedejaars studenten</label>
+							<label><input type="checkbox" name="derde"> derdejaars studenten</label>
+							<label><input type="checkbox" name="afstudeer"> afstudeer studenten</label>
+							<label><input type="checkbox" name="onbekend"> onbekend</label>
+							
+
+							<label>Opmerking<textarea rows="6"></textarea></label>
+							
+
+							<input type="submit" value="submit">
+					</fieldset>
+						
+					<fieldset id="stage">
+						<legend>Stage</legend>
+							<label>Geschikt voor</label>
+							<label><input type="checkbox" name="tweede"> tweedejaars studenten</label>
+							<label><input type="checkbox" name="afstudeer"> afstudeer studenten</label>
+							<label><input type="checkbox" name="onbekend"> onbekend</label>
+							
+
+							<label>Hoelang is de stage?</label>
+							<label><input type="radio" name="weken" value="10"> 10 weken</label>
+							<label><input type="radio" name="weken" value="20"> 20 weken</label>
+							
+
+							<label>Begin datum<input type="date"></label>
+							
+
+							<label>Beschrijving werkzaamheden<textarea rows="6"></textarea></label>
+							
+							
+							<label>Bedrijfsnaam<input type="text" required></label>
+							<label>Adres<input type="text"></label>
+							<label>Postcode<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"></label>
+							<label>Plaats<input type="text"></label>
+							<label>Sector<input type="text" required></label>
+							<label>CoreBusiness<input type="text" required></label>
+							
+
+							<label>Opmerking<textarea rows="6"></textarea></label>
+							
+
+							<input type="submit" value="submit">
+					</fieldset>
+				</form>
+			</article>
+		</main>
+		<footer></footer>
+	</body>
+</html>
